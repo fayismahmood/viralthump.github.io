@@ -1,0 +1,54 @@
+body{
+    margin: 0px;
+    background-color:#f5f9ff ;
+}
+.Header{
+    background-color: white;
+    box-shadow: #a0a0a0 -1px 1px 20px 0px;
+    border-radius: 0px;
+    margin: 0px 0px;
+    right:15px;
+	top:15px;
+    height: 50px;
+    width: 400px;
+	position:fixed;
+
+}
+.Head_Butt_div1{
+    width: 40px;
+    padding: 10px;
+    background-color: rgba(221, 68, 51, 0);
+    float: left;
+    line-height: 0px;
+}
+.Head_Butt_After:after{
+   content:url(../Graphics/point.svg);
+    width: 100px;
+    height: 200px;
+
+}
+.Head_Butt{
+    width: 40px;
+}
+.Header .Head_Butt:hover svg line,.Header .Head_Butt:hover rect {
+    stroke: lightgrey;
+    animation-duration: .1s;
+    animation-name: fadeOut;
+}
+.Header .Head_Butt:hover svg rect.ho{
+    fill:lightgrey;
+}
+.Head_Butt:hover{
+    content: '';
+}
+
+@keyframes fadeOut {
+    0%{stroke:#1C75BC}
+    100%{stroke: #a0a0a0}
+}
+.Active_butt_stroke{
+    stroke:lightgrey;
+}
+.Active_butt_fill{
+    fill:lightgrey;
+}
